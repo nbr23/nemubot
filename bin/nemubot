@@ -22,14 +22,14 @@ import os
 import imp
 import traceback
 
-import bot
-import prompt
-from prompt.builtins import load_file
-import importer
+from nemubot import Bot
+from nemubot import prompt
+from nemubot.prompt.builtins import load_file
+from nemubot import importer
 
 if __name__ == "__main__":
     # Create bot context
-    context = bot.Bot(0, "FIXME")
+    context = Bot(0, "FIXME")
 
     # Load the prompt
     prmpt = prompt.Prompt()

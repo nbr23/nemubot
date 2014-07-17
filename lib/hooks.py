@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-# Nemubot is a modulable IRC bot, built around XML configuration files.
-# Copyright (C) 2012  Mercier Pierre-Olivier
+# Nemubot is a smart and modulable IM bot.
+# Copyright (C) 2012-2014  nemunaire
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -18,8 +18,8 @@
 
 import re
 
-from response import Response
-from exception import IRCException
+from nemubot.response import Response
+from nemubot.exception import IRCException
 
 class MessagesHook:
     def __init__(self, context, bot):
